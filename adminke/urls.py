@@ -15,8 +15,11 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
+from .views import redirect_auth
 
 urlpatterns = [
     path('authentication/', include('authentication.urls')),
+    path('', redirect_auth),
     path('admin/', admin.site.urls)
+    
 ]
