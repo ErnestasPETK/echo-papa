@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Hahmlet:wght@300;400;500;600;700&display=swap');
+
+:root{
+    --cc_blue: #7F92E2;
+    --cc_yellow: #EBF615;
+    --cc_pink: #FA87B6;
+}
+
+
+#main_content_block{
+    
+    /* background: var(--cc_blue); */
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    width: 60vw;
+    height: auto;
+    margin: 2rem 20vw 2rem 20vw;
+    border-radius: 40px;
+}
+
+#main_content_block h1{
+    color:#111111;
+    text-align: center;
+    margin: 1rem 0 1rem 0;
+    position: relative;
+}
+#main_content_block h1::after{
+    content: '';
+    width: 80%;
+    height: 1.5px;
+    display: block;
+    background-color: var(--cc_pink);
+    margin: 1rem 10% 0 10%;    
+}   
+#logos{
+    display: flex;
+    flex-direction: row;
+    /* background-color: rgba(255,255,255,0.8); */
+    border-radius: 40px 40px 0px 0px;
+
+}
+#logos img{
+    width: 150px;
+    height: 150px;
+    position: relative;
+    margin: 1rem 1.5rem 1rem auto;
+}
+#logos img+img{
+    width: 20rem;
+    height: auto;
+    position: relative;
+    margin: 1rem auto 1rem 0;
+}
+#login_form{
+    margin: 1rem 1rem 1rem 1rem;
+}
+#emailHelp{
+    margin-bottom: 1rem;
+}
+#emailHelp::after{
+    content: '';
+    width: 80%;
+    height: 1.5px;
+    display: block;
+    background-color: var(--cc_blue);
+    margin: 1rem 10% 0 10%;    
+}
+#passwordHelp::after{
+    content: '';
+    width: 80%;
+    height: 1.5px;
+    display: block;
+    background-color: var(--cc_yellow);
+    margin: 1rem 10% 0 10%;    
+}
